@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWear - Inicio | Moda Sustentable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO Y BARRA DE NAVEGACIÓN CON SUBMENÚS -->
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">♻️ ReWear</a></h1>
+            <p>Moda Circular, Marcas y Personalización</p>
+        </div>
+
+        <nav class="navegacion">
+            <ul class="menu-principal">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+
+                <!-- Menú con Submenú de Prendas y Tallas -->
+                <li>
+                    <a href="camisas.html">Marcas Populares ▾</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="camisas.html">Camisas y Playeras ▸</a>
+                            <ul class="sub-tallas">
+                                <li><a href="camisas.html#talla-ch">Talla CH</a></li>
+                                <li><a href="camisas.html#talla-m">Talla M</a></li>
+                                <li><a href="camisas.html#talla-g">Talla G</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="pantalones.html">Pantalones y Jeans ▸</a>
+                            <ul class="sub-tallas">
+                                <li><a href="pantalones.html#talla-28">Talla 28</a></li>
+                                <li><a href="pantalones.html#talla-30">Talla 30</a></li>
+                                <li><a href="pantalones.html#talla-32">Talla 32</a></li>
+                                <li><a href="pantalones.html#talla-34">Talla 34</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sudaderas.html">Sudaderas y Chamarras ▸</a>
+                            <ul class="sub-tallas">
+                                <li><a href="sudaderas.html#talla-ch">Talla CH</a></li>
+                                <li><a href="sudaderas.html#talla-m">Talla M</a></li>
+                                <li><a href="sudaderas.html#talla-g">Talla G</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Menú Segunda Mano -->
+                <li>
+                    <a href="segunda_mano.html">Segunda Mano ▾</a>
+                    <ul class="submenu">
+                        <li><a href="segunda_mano.html">Ver Catálogo Seminuevo</a></li>
+                        <li><a href="segunda_mano.html#economico">Prendas menos de $150</a></li>
+                        <li><a href="segunda_mano.html#vender">¡Vende tu Ropa!</a></li>
+                    </ul>
+                </li>
+
+                <!-- Menú Importación -->
+                <li>
+                    <a href="importacion.html">Importación ▾</a>
+                    <ul class="submenu">
+                        <li><a href="importacion.html">Ropa Importada</a></li>
+                        <li><a href="importacion.html#pedidos">Pedidos Especiales</a></li>
+                    </ul>
+                </li>
+
+                <!-- Menú Custom Lab -->
+                <li><a href="custom_lab.html">🎨 Custom Lab</a></li>
+
+                <!-- Botón del Carrito -->
+                <li>
+                    <a href="carrito.html" class="boton-carrito-menu">
+                        🛒 Carrito (<span id="contador-carrito">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner">
+        <h2>Viste con estilo, cuida tu bolsillo y salva al planeta</h2>
+        <p>Plataforma estudiantil contra la contaminación del Fast Fashion. Explora ropa nueva de marca, prendas seminuevas económicas o diseña tu propia prenda.</p>
+        <div class="botones-banner">
+            <a href="segunda_mano.html" class="boton-principal">Explorar Segunda Mano</a>
+            <a href="custom_lab.html" class="boton-secundario">Ir al Custom Lab</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRENDAS DESTACADAS (CONECTADAS A SUS PÁGINAS INDIVIDUALES) -->
+    <main class="contenedor">
+        <h2 class="titulo-seccion">🌟 Prendas Destacadas de la Semana</h2>
+        <p class="subtitulo-seccion">Haz clic en cualquier prenda para ver su página individual, elegir tu talla y agregarla al carrito.</p>
+
+        <div class="grid-productos">
+            <!-- Producto Destacado 1 -->
+            <div class="tarjeta-producto">
+                <span class="etiqueta nueva">Marca Nueva</span>
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="Playera Blanca">
+                <h3>Playera Básica Urban Fit</h3>
+                <p class="precio">$250.00 MXN</p>
+                <p class="tallas-disp">Tallas: CH, M, G</p>
+                <a href="camisa1.html" class="boton-ver">Ver Prenda y Tallas</a>
+            </div>
+
+            <!-- Producto Destacado 2 -->
+            <div class="tarjeta-producto">
+                <span class="etiqueta nueva">Marca Nueva</span>
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" alt="Jeans Mezclilla">
+                <h3>Jeans Clásicos Corte Recto</h3>
+                <p class="precio">$420.00 MXN</p>
+                <p class="tallas-disp">Tallas: 28, 30, 32, 34</p>
+                <a href="pantalon1.html" class="boton-ver">Ver Prenda y Tallas</a>
+            </div>
+
+            <!-- Producto Destacado 3 -->
+            <div class="tarjeta-producto">
+                <span class="etiqueta nueva">Marca Nueva</span>
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400" alt="Sudadera">
+                <h3>Sudadera Streetwear Negra</h3>
+                <p class="precio">$480.00 MXN</p>
+                <p class="tallas-disp">Tallas: CH, M, G</p>
+                <a href="sudadera1.html" class="boton-ver">Ver Prenda y Tallas</a>
+            </div>
+
+            <!-- Producto Destacado 4 -->
+            <div class="tarjeta-producto">
+                <span class="etiqueta segunda">Segunda Mano (9/10)</span>
+                <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400" alt="Camisa Vintage">
+                <h3>Playera Gráfica Vintage</h3>
+                <p class="precio">$120.00 MXN</p>
+                <p class="tallas-disp">Talla Única: M</p>
+                <a href="segunda1.html" class="boton-ver">Ver Prenda</a>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE TRIPLE IMPACTO (PARA LOS JUECES DE EXPOLITEC) -->
+        <h2 class="titulo-seccion" style="margin-top: 60px;">🌱 Nuestro Triple Impacto</h2>
+        <div class="tarjetas-contenedor">
+            <div class="tarjeta-info">
+                <h3>🌍 Ambiental</h3>
+                <p>Le damos una segunda oportunidad a la ropa en buen estado para evitar que toneladas de prendas terminen en la basura.</p>
+            </div>
+            <div class="tarjeta-info">
+                <h3>🤝 Social</h3>
+                <p>Apoyamos la economía de los estudiantes con precios accesibles y un espacio para ganar dinero vendiendo ropa que ya no usan.</p>
+            </div>
+            <div class="tarjeta-info">
+                <h3>💡 Innovación (Custom Lab)</h3>
+                <p>Personaliza tus prendas eligiendo colores y textos para tener un estilo único sin gastar de más.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p><strong>Proyecto ReWear - Expolitec</strong> | Grupo: TPSI7BV - Emprendimiento 2</p>
+        <p>Integrantes: Carlos Efraim Gomez Sandoval • Onil Spencer Gomez Marin • Diego Alejandro Rayas Saldaña</p>
+        <p>Docente Asesor: Jonathan Uriel Tapia Tesillos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

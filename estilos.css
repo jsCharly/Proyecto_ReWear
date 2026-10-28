@@ -1,0 +1,422 @@
+/* ==========================================
+   ESTILOS GENERALES (NIVEL PREPA)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f7f4;
+    color: #333;
+}
+
+/* ==========================================
+   ENCABEZADO Y MENÚ CON SUBMENÚS DESPLEGABLES
+   ========================================== */
+header {
+    background-color: #1b4332;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.logo h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #b7e4c7;
+}
+
+.menu-principal {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-principal > li {
+    position: relative;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.menu-principal a:hover, .menu-principal a.activo {
+    background-color: #40916c;
+}
+
+.boton-carrito-menu {
+    background-color: #52b788;
+    font-weight: bold;
+}
+
+/* Submenú Nivel 1 (Prendas) */
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2d6a4f;
+    min-width: 210px;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.submenu li {
+    position: relative;
+    border-bottom: 1px solid #40916c;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menu-principal > li:hover > .submenu {
+    display: block;
+}
+
+/* Submenú Nivel 2 (Tallas al lado derecho) */
+.sub-tallas {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #40916c;
+    min-width: 130px;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.submenu li:hover > .sub-tallas {
+    display: block;
+}
+
+/* ==========================================
+   BANNER PRINCIPAL
+   ========================================== */
+.banner {
+    background-color: #d8f3dc;
+    text-align: center;
+    padding: 55px 20px;
+    border-bottom: 3px solid #95d5b2;
+}
+
+.banner h2 {
+    font-size: 30px;
+    color: #1b4332;
+    margin-bottom: 12px;
+}
+
+.banner p {
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    color: #2d6a4f;
+}
+
+.boton-principal {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-principal:hover {
+    background-color: #1b4332;
+}
+
+.boton-secundario {
+    background-color: white;
+    color: #1b4332;
+    border: 2px solid #1b4332;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* ==========================================
+   CONTENEDORES Y TARJETAS DE CATÁLOGO
+   ========================================== */
+.contenedor {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1b4332;
+    font-size: 26px;
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 15px;
+}
+
+.grid-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta-producto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 245px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.etiqueta.nueva { background-color: #2d6a4f; }
+.etiqueta.segunda { background-color: #e76f51; }
+.etiqueta.importada { background-color: #1d3557; }
+
+.tarjeta-producto h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 5px;
+}
+
+.tallas-disp {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.boton-ver {
+    display: block;
+    background-color: #1b4332;
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.boton-ver:hover {
+    background-color: #40916c;
+}
+
+/* Tarjetas informativas */
+.tarjetas-contenedor {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tarjeta-info {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+}
+
+.tarjeta-info h3 {
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   VISTA DE PRENDA INDIVIDUAL (PARA LAS 28 PÁGINAS)
+   ========================================== */
+.detalle-prenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.detalle-imagen {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.detalle-imagen img {
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.detalle-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.detalle-info h2 {
+    font-size: 28px;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.detalle-info .precio-grande {
+    font-size: 24px;
+    color: #2d6a4f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.detalle-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.selector-caja {
+    margin: 20px 0;
+}
+
+.selector-caja label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.selector-caja select, .selector-caja input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* ==========================================
+   TABLA DEL CARRITO Y FORMULARIOS
+   ========================================== */
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+}
+
+.tabla-carrito th, .tabla-carrito td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-carrito th {
+    background-color: #1b4332;
+    color: white;
+}
+
+.caja-total {
+    text-align: right;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.formulario-caja {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.formulario-caja label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.formulario-caja input, .formulario-caja select, .formulario-caja textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ==========================================
+   PIE DE PÁGINA
+   ========================================== */
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
